@@ -20,7 +20,7 @@ describe("GET /health - check server health", () => {
 describe("GET /add - Additions", () => {
 	it("should add two and two", done => {
 		chai.request(server)
-		.get("/add/2/2")
+		.get("/add/2/3")
 		.end((err, res) => {
 			should.not.exist(err);
 			res.status.should.equal(200);
